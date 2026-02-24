@@ -9,7 +9,7 @@ LangChain + ChromaDB + GPT-4o를 연결한 질의응답 시스템입니다.
 
 ## 데모
 
-![데모 스크린샷](https://github.com/user-attachments/assets/31dbd038-f7f2-43ad-bab0-39c8bcd4fdb1)
+![데모 스크린샷](https://github.com/user-attachments/assets/2d723019-98af-45e5-b5ea-8c25a20e59e0)
 
 ---
 
