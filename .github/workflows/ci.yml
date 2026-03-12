@@ -22,4 +22,4 @@ jobs:
         run: poetry run ruff check .
 
       - name: Test (pytest)
-        run: poetry run pytest tests/ -v
+        run: poetry run pytest tests/ -v --ignore=tests/fixtures

@@ -33,3 +33,8 @@ dev = [
     "pytest (>=9.0.2,<10.0.0)",
     "ruff (>=0.15.5,<0.16.0)"
 ]
+
+
+[tool.pytest.ini_options]
+addopts = "--tb=short"
+testpaths = ["tests"]
