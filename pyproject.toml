@@ -20,14 +20,14 @@ dependencies = [
     "chardet (>=7.1.0,<8.0.0)"
 ]
 
+[tool.poetry]
+package-mode = false       
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 
-#변경사항 (26.03.12)
-#requires-python = "^3.11"  ->  requires-python = ">=3.11,<3.15"
 [dependency-groups]
 dev = [
     "pytest (>=9.0.2,<10.0.0)",
