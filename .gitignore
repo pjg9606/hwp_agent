@@ -38,3 +38,14 @@ sqlite-dll-win-x64-3510200/
 # ========== OS ==========
 .DS_Store
 Thumbs.db
+
+# 추가 보안 항목
+.env.local
+.env.*.local
+*.key
+/secrets/
+/credentials/
+
+# 생성 데이터
+chroma_db/
+__pycache__/

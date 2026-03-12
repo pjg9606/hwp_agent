@@ -1,0 +1,35 @@
+[project]
+name = "hwp-agent"
+version = "0.1.0"
+description = "HWP 공공문서 AI 에이전트"
+authors = [
+    {name = "pjg9606"}
+]
+readme = "README.md"
+requires-python = ">=3.11,<3.15"
+dependencies = [
+    "langchain (>=1.2.12,<2.0.0)",
+    "langchain-openai (>=1.1.11,<2.0.0)",
+    "langchain-community (>=0.4.1,<0.5.0)",
+    "python-dotenv (>=1.2.2,<2.0.0)",
+    "streamlit (>=1.55.0,<2.0.0)",
+    "openai (>=2.26.0,<3.0.0)",
+    "faiss-cpu (>=1.13.2,<2.0.0)",
+    "pyhwp (>=0.1b15,<0.2)",
+    "lxml (>=6.0.2,<7.0.0)",
+    "chardet (>=7.1.0,<8.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+#변경사항 (26.03.12)
+#requires-python = "^3.11"  ->  requires-python = ">=3.11,<3.15"
+[dependency-groups]
+dev = [
+    "pytest (>=9.0.2,<10.0.0)",
+    "ruff (>=0.15.5,<0.16.0)"
+]
