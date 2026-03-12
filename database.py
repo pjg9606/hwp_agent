@@ -1,11 +1,9 @@
 import os
-import shutil
 from dotenv import load_dotenv
 from langchain_upstage import UpstageDocumentParseLoader
 from langchain_openai import OpenAIEmbeddings
 from langchain_chroma import Chroma
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain_core.documents import Document  
 from langchain_community.vectorstores.utils import filter_complex_metadata
 
 # 1. 환경 변수 로드
@@ -34,7 +32,7 @@ def save_to_db(file_path):
     docs = loader.load()
 
     # --- 2. Split (문서 쪼개기) ---
-    print(f"✂️  [Split] 문서 분할 중...")
+    print("✂️  [Split] 문서 분할 중...")
     text_splitter = RecursiveCharacterTextSplitter(
         chunk_size=2000,
         chunk_overlap=200,

@@ -1,6 +1,5 @@
 import streamlit as st
 import os
-import shutil
 from langchain_openai import ChatOpenAI
 from langchain_core.messages import HumanMessage, SystemMessage
 from database import save_to_db, query_db # 우리가 만든 모듈 가져오기
