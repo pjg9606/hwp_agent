@@ -1,5 +1,5 @@
-```
-# HWP 공공문서 AI 에이전트 프로젝트
+python -c "
+content = '''# HWP 공공문서 AI 에이전트 프로젝트
 
 ## 프로젝트 개요
 - 한국 공공기관(B2G) 타겟 HWP 문서 기반 RAG 질의응답 시스템
@@ -27,3 +27,8 @@
 - 모든 API 키는 os.getenv()로만 참조, 하드코딩 절대 금지
 - 함수는 단일 책임 원칙 준수
 - 한국어 주석 사용
+'''
+with open('.cursorrules', 'w', encoding='utf-8') as f:
+    f.write(content)
+print('완료')
+"
